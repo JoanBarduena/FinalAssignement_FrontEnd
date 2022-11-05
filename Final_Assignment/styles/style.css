@@ -2,10 +2,11 @@
 
 * {
   margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;
 }
 
 body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
   background-color: #181818;
 }
 
@@ -50,9 +51,14 @@ a {
   justify-content: space-between;
 }
 
+.right-section a {
+  margin-left: 5vh;
+}
+
 /* ------- FOOTER ------- */
 
 footer {
+  bottom: 0;
   background-color: #BF4904;
   height: 10vh;
 
@@ -108,13 +114,55 @@ article:nth-child(even) {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
 }
 
 .img_1 {
-  background-image: url(/images/main.jpg);
+  background-image: url(/Final_Assignment/images/main.jpg);
 }
 
 .img_2 {
-  background-image: url(/images/main4.jpg);
+  background-image: url(/Final_Assignment/images/main4.jpg);
+}
+
+
+/* ----- RESPONSIVE DESIGN ------ */
+
+@media only screen and (max-width: 620px) {
+
+  .home {
+    font-size: 20px;
+  }
+
+  .left-section {
+    margin-left: 2vh;
+  }
+
+  .right-section {
+    margin-right: 2vh;
+  }
+
+  .right-section a {
+    margin-left: 2vh;
+  }
+
+  section {
+    margin: 5vh 3vh 0vh 3vh;
+  }
+
+  section:nth-child(odd) {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  section:nth-child(even) {
+    margin-bottom: 10vh;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  article:nth-child(even) {
+    padding: 2vh 0;
+    border-right: 10px solid #BF4904;
+  }
+
 }
