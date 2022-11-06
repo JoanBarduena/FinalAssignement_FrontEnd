@@ -1,0 +1,51 @@
+main {
+  margin-top: 9vh;
+  height: 140vh;
+
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  height: 85%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.image {
+  width: 90%;
+  height: 90%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img_1 {
+  background-image: url(../images/hung-liu.jpg);
+}
+
+.img_2 {
+  background-image: url(../images/hung-liu.jpg);
+}
+
+.img_3 {
+  background-image: url(../images/hung-liu.jpg);
+}
+
+.img_4 {
+  background-image: url(../images/main.jpg);
+}
+
+.img_5 {
+  background-image: url(../images/hung-liu.jpg);
+}
+
+.img_6 {
+  background-image: url(../images/hung-liu.jpg);
+}
