@@ -6,25 +6,28 @@
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 28px;
   background-color: #181818;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 26px;
 }
 
 /* ------- NAVIGATION BAR ------- */
 
 header {
   top: 0;
-  height: 8vh;
+  height: 9vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   position: fixed;
   width: 100%;
   background-color: rgba(39, 39, 39, 255);
-  /* border-bottom: 4px solid #BF4904;
-  background-color: #181818; */
   background-color: #BF4904;
-  /* border-bottom: 4px solid #D9CDBF; */
 }
 
 .left-section {
@@ -34,8 +37,33 @@ header {
 
 a {
   color: white;
+  text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
+
+  display: inline-block;
+  padding: 3px 10px;
+  position: relative;
+}
+
+/* !important --- animation extracted from Internet */
+
+.right-section a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.right-section a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .home {
@@ -52,7 +80,9 @@ a {
 }
 
 .right-section a {
-  margin-left: 5vh;
+  /* margin-left: 5vh; */
+  text-align: center;
+  font-size: 16px;
 }
 
 /* ------- FOOTER ------- */
@@ -68,101 +98,4 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* ------- HOME PAGE ------- */
-
-.main {
-  margin-top: 8vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  height: 150vh;
-}
-
-section {
-  display: grid;
-  margin: 10vh 5vh 0vh 5vh;
-  height: 50%;
-}
-
-section:nth-child(odd) {
-  grid-template-columns: 1fr 2fr;
-}
-
-section:nth-child(even) {
-  margin-bottom: 10vh;
-  grid-template-columns: 2fr 1fr;
-}
-
-article {
-  color: white;
-}
-
-article:nth-child(odd) {
-  padding: 0 3vh;
-  border-left: 10px solid #BF4904;
-}
-
-article:nth-child(even) {
-  padding: 0 3vh;
-  border-right: 10px solid #BF4904;
-}
-
-.image {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.img_1 {
-  background-image: url(/Final_Assignment/images/main.jpg);
-}
-
-.img_2 {
-  background-image: url(/Final_Assignment/images/main4.jpg);
-}
-
-
-/* ----- RESPONSIVE DESIGN ------ */
-
-@media only screen and (max-width: 620px) {
-
-  .home {
-    font-size: 20px;
-  }
-
-  .left-section {
-    margin-left: 2vh;
-  }
-
-  .right-section {
-    margin-right: 2vh;
-  }
-
-  .right-section a {
-    margin-left: 2vh;
-  }
-
-  section {
-    margin: 5vh 3vh 0vh 3vh;
-  }
-
-  section:nth-child(odd) {
-    grid-template-columns: none;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  section:nth-child(even) {
-    margin-bottom: 10vh;
-    grid-template-columns: none;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  article:nth-child(even) {
-    padding: 2vh 0;
-    border-right: 10px solid #BF4904;
-  }
-
 }
