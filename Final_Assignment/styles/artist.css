@@ -5,8 +5,12 @@ main {
   display: flex;
   flex-direction: column;
 
-  height: 200vh;
+  height: auto;
   color: #fff;
+}
+
+section {
+  display: block;
 }
 
 .artist-info {
@@ -15,6 +19,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 
 article {
   padding: 0vh 10vh 10vh 5vh;
@@ -32,6 +37,7 @@ article p {
 }
 
 .image {
+  display: block;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,4 +65,36 @@ article p {
 .img_2 {
   flex: 6;
   background-image: url(../images/main.jpg);
+}
+
+.other-works p {
+  color: rgb(255, 0, 0);
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1500px) {
+
+  main {
+    margin-top: 2vh;
+  }
+
+  article {
+    margin-left: 3vh;
+    margin-bottom: 3vh;
+    padding: 0vh 3vh 0 2vh;
+  }
+
+  .artist-info {
+    grid-template-columns: 1fr;
+  }
+
+  .other-works {
+    padding: 0 2vh 2vh 2vh;
+  }
+
+  .other-works p {
+    font-size: 14px;
+  }
 }

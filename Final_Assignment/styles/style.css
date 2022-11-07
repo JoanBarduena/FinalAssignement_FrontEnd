@@ -99,3 +99,20 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+/* ----- RESPONSIVE DESIGN ------ */
+
+@media only screen and (max-width: 620px) {
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: #181818;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}

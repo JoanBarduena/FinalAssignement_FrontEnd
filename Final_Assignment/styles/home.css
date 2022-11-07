@@ -56,9 +56,6 @@ article:nth-child(even) {
   background-image: url(../images/closeup_2.jpg );
 }
 
-
-/* ----- RESPONSIVE DESIGN ------ */
-
 @media only screen and (max-width: 620px) {
 
   .home {
