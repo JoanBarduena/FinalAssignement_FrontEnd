@@ -27,25 +27,25 @@ main {
 }
 
 .img_1 {
-  background-image: url(../images/hung-liu.jpg);
+  background-image: url(../images/closeup_4.jpg);
 }
 
 .img_2 {
-  background-image: url(../images/hung-liu.jpg);
-}
-
-.img_3 {
-  background-image: url(../images/hung-liu.jpg);
-}
-
-.img_4 {
   background-image: url(../images/main.jpg);
 }
 
+.img_3 {
+  background-image: url(../images/closeup_2.jpg);
+}
+
+.img_4 {
+  background-image: url(../images/closeup_3.jpg);
+}
+
 .img_5 {
-  background-image: url(../images/hung-liu.jpg);
+  background-image: url(../images/main2.jpg);
 }
 
 .img_6 {
-  background-image: url(../images/hung-liu.jpg);
+  background-image: url(../images/closeup_1.jpg);
 }
