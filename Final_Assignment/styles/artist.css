@@ -5,27 +5,27 @@ main {
   display: flex;
   flex-direction: column;
 
-  height: auto;
-  color: #fff;
+  height: 200vh;
 }
 
 section {
-  display: block;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  /* margin-top: 8vh; */
 }
 
 .artist-info {
-  flex: 1;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
 }
 
-
 article {
-  padding: 0vh 10vh 10vh 5vh;
+  flex: 1;
+  padding: 0 10vh 10vh 5vh;
+  margin-top: 10vh;
   margin-left: 5vh;
   border-left: 6px solid #BF4904;
-  margin-top: 10vh;
 }
 
 article h2 {
@@ -37,25 +37,23 @@ article p {
 }
 
 .image {
-  display: block;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .img_1 {
+  flex: 1;
   background-image: url(../images/hung-liu.jpg);
 }
 
 .other-works {
-  flex: 2;
+  margin: 10vh;
   display: flex;
   flex-direction: column;
-  padding: 0 20vh 20vh 20vh;
 }
 
 .other-works h2 {
-  flex: 1;
   text-align: center;
   display: flex;
   align-items: center;
@@ -63,31 +61,29 @@ article p {
 }
 
 .img_2 {
-  flex: 6;
+  flex: 1;
   background-image: url(../images/main.jpg);
-}
-
-.other-works p {
-  color: rgb(255, 0, 0);
-  font-size: 40px;
-  font-weight: 900;
-  text-align: center;
 }
 
 @media only screen and (max-width: 1500px) {
 
-  main {
+  /* main {
     margin-top: 2vh;
   }
 
-  article {
+  /* section:first-of-type {
+    height: 50%;
+  } */
+
+  /* article {
     margin-left: 3vh;
     margin-bottom: 3vh;
     padding: 0vh 3vh 0 2vh;
   }
 
   .artist-info {
-    grid-template-columns: 1fr;
+    height: 50%;
+    grid-template-rows: 1fr 1fr;
   }
 
   .other-works {
@@ -96,5 +92,5 @@ article p {
 
   .other-works p {
     font-size: 14px;
-  }
+  } */
 }
