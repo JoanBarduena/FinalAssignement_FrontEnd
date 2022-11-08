@@ -1,7 +1,6 @@
 /* ----- ARTIST PAGE ----- */
 
 main {
-  margin-top: 8vh;
   display: flex;
   flex-direction: column;
 
@@ -48,7 +47,7 @@ article p {
 }
 
 .other-works {
-  margin: 10vh;
+  margin: 5vh 10vh 10vh 10vh;
   display: flex;
   flex-direction: column;
 }
@@ -58,39 +57,42 @@ article p {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2vh;
 }
 
 .img_2 {
   flex: 1;
-  background-image: url(../images/main.jpg);
+  background-image: url(../images/otherwork_1.jpg);
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 860px) {
 
-  /* main {
-    margin-top: 2vh;
+  main {
+    font-size: 14px;
   }
 
-  /* section:first-of-type {
+  section:nth-child(2) {
     height: 50%;
-  } */
-
-  /* article {
-    margin-left: 3vh;
-    margin-bottom: 3vh;
-    padding: 0vh 3vh 0 2vh;
   }
 
   .artist-info {
-    height: 50%;
-    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
+  }
+
+  article {
+    padding: 0 2vh 2vh 2vh;
+    margin-top: 4vh;
+    margin-left: 2vh;
   }
 
   .other-works {
-    padding: 0 2vh 2vh 2vh;
+    margin: 4vh 2vh 2vh 2vh;
+    display: flex;
+    flex-direction: column;
   }
 
-  .other-works p {
-    font-size: 14px;
-  } */
+  .other-works h2 {
+    margin-bottom: 2vh;
+  }
+
 }

@@ -2,6 +2,14 @@
 
 * {
   margin: 0;
+
+}
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -10,6 +18,14 @@ body {
   line-height: 28px;
   background-color: #181818;
   color: #fff;
+  margin-bottom: -10vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin-top: 8vh;
 }
 
 h2 {
@@ -89,9 +105,9 @@ a {
 /* ------- FOOTER ------- */
 
 footer {
-  bottom: 0;
   background-color: #BF4904;
   height: 10vh;
+  margin-top: auto;
 
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
@@ -103,7 +119,7 @@ footer {
 
 /* ----- RESPONSIVE DESIGN ------ */
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 860px) {
 
   body {
     font-family: 'Noto Sans JP', sans-serif;
@@ -115,5 +131,21 @@ footer {
   h2 {
     font-weight: 700;
     font-size: 20px;
+  }
+
+  .home {
+    font-size: 18px;
+  }
+
+  .left-section {
+    margin-left: 1vh;
+  }
+
+  .right-section {
+    margin-right: 1vh;
+  }
+
+  .right-section a {
+    margin-left: 1vh;
   }
 }

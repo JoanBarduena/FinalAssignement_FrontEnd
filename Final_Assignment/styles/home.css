@@ -1,7 +1,6 @@
 /* ------- HOME PAGE ------- */
 
 main {
-  margin-top: 8vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,23 +55,7 @@ article:nth-child(even) {
   background-image: url(../images/closeup_2.jpg );
 }
 
-@media only screen and (max-width: 620px) {
-
-  .home {
-    font-size: 18px;
-  }
-
-  .left-section {
-    margin-left: 1vh;
-  }
-
-  .right-section {
-    margin-right: 1vh;
-  }
-
-  .right-section a {
-    margin-left: 1vh;
-  }
+@media only screen and (max-width: 860px) {
 
   section {
     margin: 5vh 3vh 0vh 3vh;
