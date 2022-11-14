@@ -1,8 +1,118 @@
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 
-  height: 50vh;
+  height: 240vh;
   font-size: 40px;
+}
+
+.museum-img {
+  background-color: lightblue;
+  height: 40%;
+  width: 100%;
+  background-image: url("../images/museum.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.museum-info {
+  height: 25%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.museum-info-text {
+  height: 80%;
+  width: 60%;
+}
+
+.museum-info-text h2 {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.museum-info-text p {
+  text-align: left;
+}
+
+.museum-location {
+  height: 35%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.museum-location-box {
+  height: 80%;
+  width: 80%;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.museum-map {
+  width: 60%;
+  height: 80%;
+  background-color: lightsalmon;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.museum-hours {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.museum-hours a {
+  color: #BF4904;
+  font-weight: 700;
+  padding: 0;
+  text-transform: none;
+  font-size: 16px;
+}
+
+.hours-title,
+.location-title {
+  color: #BF4904;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+  border-bottom: 4px solid #BF4904;
+  height: 8%;
+  text-transform: uppercase;
+  margin-bottom: 2vh;
+  margin-left: 5vh;
+}
+
+/* .hours-text {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+} */
+
+.hours-text,
+.location-text {
+  height: 42%;
+  color: black;
+  text-align: right;
+}
+
+.hours-text p,
+.location-text p {
+  font-size: 16px;
 }
