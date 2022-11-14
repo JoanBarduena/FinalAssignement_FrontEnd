@@ -48,7 +48,7 @@ main {
   justify-content: center;
 }
 
-.museum-location-box {
+.museum-location-left {
   height: 80%;
   width: 80%;
   background-color: #fff;
@@ -70,15 +70,21 @@ iframe {
   height: 100%;
 }
 
-.museum-hours {
+.museum-location-right {
   width: 30%;
   height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
-.museum-hours a {
+.museum-location-flex {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.museum-location-right a {
   color: #BF4904;
   font-weight: 700;
   padding: 0;
@@ -93,21 +99,30 @@ iframe {
   font-weight: 700;
   text-align: right;
   border-bottom: 4px solid #BF4904;
-  height: 8%;
   text-transform: uppercase;
+  margin-left: 5vh;
   margin-bottom: 2vh;
+}
+
+.hours-text {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   margin-left: 5vh;
 }
 
-/* .hours-text {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr;
-} */
+.hours-text p {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.hours-text p:nth-of-type(-n + 4) {
+  border-bottom: 1px solid #BF4904;
+}
 
 .hours-text,
 .location-text {
-  height: 42%;
   color: black;
   text-align: right;
 }
