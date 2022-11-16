@@ -49,6 +49,7 @@ header {
   width: 100%;
   background-color: rgba(39, 39, 39, 255);
   background-color: #BF4904;
+  z-index: 100;
 }
 
 .left-section {
@@ -109,9 +110,10 @@ a {
 /* ------- FOOTER ------- */
 
 footer {
-  background-color: #BF4904;
+  /* background-color: #BF4904; */
   height: 10vh;
   margin-top: auto;
+  /* border-top: 2px solid white; */
 
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);

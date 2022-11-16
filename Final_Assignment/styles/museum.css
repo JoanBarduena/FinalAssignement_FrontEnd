@@ -131,3 +131,66 @@ iframe {
 .location-text p {
   font-size: 16px;
 }
+
+@media only screen and (max-width: 860px) {
+
+  .museum-img {
+    height: 20%;
+  }
+
+  .museum-info {
+    height: 35%;
+  }
+
+  .museum-info-text {
+    width: 85%;
+    height: 90%;
+  }
+
+  .museum-location {
+    height: 45%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+
+  .museum-map {
+    width: 100%;
+  }
+
+  .museum-location-left {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .museum-location-flex {
+    height: 100%;
+  }
+
+  .hours-title {
+    margin-top: 2vh;
+  }
+
+  .location-title {
+    margin-top: 1vh;
+  }
+
+  .hours-title,
+  .location-title {
+    padding-bottom: 1vh;
+    margin-left: 0;
+  }
+
+  .hours-text {
+    margin: 0;
+  }
+
+  .hours-text p:nth-child(n+3) {
+    padding: 1vh 0;
+  }
+
+  .museum-location-right {
+    width: 90%;
+  }
+}

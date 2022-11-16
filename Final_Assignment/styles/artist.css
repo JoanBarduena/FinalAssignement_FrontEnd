@@ -4,17 +4,22 @@ main {
   display: flex;
   flex-direction: column;
 
-  height: 200vh;
+  height: 180vh;
 }
 
-section {
+/* section {
   height: 100%;
   display: grid;
   grid-template-rows: 1fr;
   /* margin-top: 8vh; */
+
+
+.top-section {
+  height: 40%;
 }
 
 .artist-info {
+  height: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -46,10 +51,17 @@ article p {
   background-image: url(../images/hung-liu.jpg);
 }
 
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  height: 55%;
+}
+
 .other-works {
-  margin: 5vh 10vh 10vh 10vh;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
+  width: 60%;
 }
 
 .other-works h2 {
@@ -65,18 +77,155 @@ article p {
   background-image: url(../images/otherwork_1.jpg);
 }
 
+
+/* ------- CARROUSEL -------- */
+
+* {
+  box-sizing: border-box
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.mySlides {
+  width: 100%;
+  height: 100%;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+.carrousel-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.one {
+  background-image: url("../images/otherwork_1.jpg");
+}
+
+.two {
+  background-image: url("../images/otherwork_2.jpg");
+}
+
+.three {
+  background-image: url("../images/otherwork_3.jpg");
+}
+
+.four {
+  background-image: url("../images/otherwork_4.jpg");
+}
+
+.five {
+  background-image: url("../images/otherwork_5.jpg");
+}
+
+.six {
+  background-image: url("../images/otherwork_6.jpg");
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #BF4904;
+  font-weight: bold;
+  font-size: 36px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -6vh;
+  width: 100%;
+  text-align: center;
+  background-color: #BF4904;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 8vh 2px 0 2px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #fff;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+
+@keyframes fade {
+  from {
+    opacity: .5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
 @media only screen and (max-width: 860px) {
 
   main {
     font-size: 14px;
   }
 
-  section:nth-child(2) {
-    height: 50%;
-  }
-
   .artist-info {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   article {
@@ -85,14 +234,43 @@ article p {
     margin-left: 2vh;
   }
 
+  .top-section {
+    height: 70%;
+  }
+
+  .bottom-section {
+    height: 30%;
+    margin-top: 2vh;
+  }
+
   .other-works {
-    margin: 4vh 2vh 2vh 2vh;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
   }
 
-  .other-works h2 {
-    margin-bottom: 2vh;
+  .text {
+    bottom: -4vh;
   }
 
+  .dot {
+    height: 8px;
+    width: 8px;
+    margin: 5vh 2px 0 2px;
+  }
+
+  /* .other-works {
+      margin: 4vh 2vh 2vh 2vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .other-works h2 {
+      margin-bottom: 2vh;
+    } */
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
 }

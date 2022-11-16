@@ -52,8 +52,9 @@ main {
 @media only screen and (max-width: 620px) {
 
   main {
+    height: 200vh;
     margin-top: 11vh;
-    margin-bottom: 2vh;
+    margin-bottom: 0;
   }
 
   .container {

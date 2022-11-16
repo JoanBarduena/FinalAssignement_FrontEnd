@@ -25,7 +25,7 @@
 
   <main>
 
-    <section>
+    <div class="top-section">
       <div class="artist-info">
         <article>
           <h2>HUNG LUI</h2>
@@ -44,15 +44,70 @@
         </article>
         <div class="image img_1"></div>
       </div>
-    </section>
+    </div>
 
-    <section>
+
+    <!-- Hung Liu, Visage VI, 2005, oil on canvas, 52 x 48. Collection of the Oakland Museum of California. Gift of Daryl and John Lillie. -->
+
+    <div class="bottom-section">
       <div class="other-works">
-        <h2>OTHER WORKS (wip carroussel)</h2>
-        <div class="image img_2">
+        <h2>OTHER WORKS</h2>
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <!-- <img src="../images/otherwork_1.jpg" class="responsive-img"> -->
+            <div class="carrousel-img one"></div>
+            <div class="text">
+              Bindlestiff, 2015. Oil on canvas, 80 x 120 in.
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="carrousel-img two"></div>
+            <div class="text">
+              Heroine of Gu Yanxiu, 2012. Oil on canvas, 96 x 160 in.
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="carrousel-img three"></div>
+            <div class="text">
+              Portrait of Dorothea Lange, 2017. Oil on canvas, 48 x 36 in.
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="carrousel-img four"></div>
+            <div class="text">
+              Still Point, 1998. Oil on canvas, 84 x 60 in.
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="carrousel-img five"></div>
+            <div class="text">
+              OMCA Hung Liu exposition
+            </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
         </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <!-- <span class="dot" onclick="currentSlide(6)"></span> -->
+        </div>
+
       </div>
-    </section>
+    </div>
+
+
   </main>
 
   <footer>
@@ -60,5 +115,7 @@
   </footer>
 
 </body>
+
+<script src="../scripts/script.js"></script>
 
 </html>
