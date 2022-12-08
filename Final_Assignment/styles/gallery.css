@@ -1,5 +1,5 @@
 main {
-  height: 140vh;
+  height: 210vh;
 
   display: flex;
   flex-grow: 1;
@@ -26,27 +26,39 @@ main {
 }
 
 .img_1 {
-  background-image: url(../images/closeup_4.jpg);
+  background-image: url(../images/gallery1.jpeg );
 }
 
 .img_2 {
-  background-image: url(../images/main.jpg);
+  background-image: url(../images/gallery2.jpg);
 }
 
 .img_3 {
-  background-image: url(../images/closeup_2.jpg);
+  background-image: url(../images/gallery3.jpg);
 }
 
 .img_4 {
-  background-image: url(../images/closeup_3.jpg);
+  background-image: url(../images/gallery4.jpg);
 }
 
 .img_5 {
-  background-image: url(../images/main2.jpg);
+  background-image: url(../images/gallery5.jpg);
 }
 
 .img_6 {
-  background-image: url(../images/closeup_1.jpg);
+  background-image: url(../images/gallery6.jpg);
+}
+
+.img_7 {
+  background-image: url(../images/gallery7.jpg);
+}
+
+.img_8 {
+  background-image: url(../images/gallery8.jpg);
+}
+
+.img_9 {
+  background-image: url(../images/gallery9.jpg);
 }
 
 @media only screen and (max-width: 620px) {
