@@ -1,6 +1,23 @@
 $(document).ready(function () {
 
-  //Gallery photography
+  // Museum gallery Lightbox
+  const openLightBox = function (event) {
+
+    $(".lightbox-content").html("<img src='" + event.target.src + "'>");
+
+    $(".lightbox").addClass("active");
+  }
+
+  $(function () {
+
+    $("body").on("click", ".gallery-item img", openLightBox);
+
+    $(".lightbox-back").on("click", function () {
+      $(".lightbox").removeClass("active");
+    })
+  })
+
+  //Artwork gallery 
   let chosen = 0;
   let page = 0;
 
