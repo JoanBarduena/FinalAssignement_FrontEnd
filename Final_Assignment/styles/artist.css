@@ -147,13 +147,9 @@ img {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: #BF4904;
-  font-weight: bold;
-  font-size: 36px;
+  color: rgb(230, 230, 230, .8);
+  font-size: 3rem;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
@@ -161,33 +157,36 @@ img {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  margin-right: -8vh;
+}
+
+.prev {
+  margin-left: -8vh;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 3.5rem;
+  color: white;
 }
 
 /* Caption text */
 .text {
-  color: #fff;
-  font-size: 16px;
+  color: rgb(230, 230, 230);
+  font-size: 14px;
   font-weight: 500;
-  padding: 8px 12px;
   position: absolute;
-  bottom: -6vh;
   width: 100%;
   text-align: center;
-  background-color: #BF4904;
 }
 
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 8vh 2px 0 2px;
+  height: 1.5vh;
+  width: 1.5vh;
+  margin: 6vh 2px 0 2px;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 50%;
   border: 1px solid #fff;
@@ -209,7 +208,7 @@ img {
 
 @keyframes fade {
   from {
-    opacity: .5;
+    opacity: .7;
   }
 
   to {
@@ -271,6 +270,6 @@ img {
   .prev,
   .next,
   .text {
-    font-size: 11px
+    margin: 0;
   }
 }

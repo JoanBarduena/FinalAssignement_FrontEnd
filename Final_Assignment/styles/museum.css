@@ -5,13 +5,14 @@ main {
 
   height: 240vh;
   font-size: 40px;
+
+  color: #181818;
 }
 
 .museum-img {
-  background-color: lightblue;
   height: 40%;
   width: 100%;
-  background-image: url("../images/gallery1.jpeg");
+  background-image: url("../images/museum.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -193,4 +194,126 @@ iframe {
   .museum-location-right {
     width: 90%;
   }
+}
+
+.tabs {
+  padding-top: 10vh;
+  display: flex;
+  height: auto;
+  width: 80%;
+}
+
+.tabs-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-right {
+  padding: 5vh;
+  flex: 4;
+  background-color: rgb(230, 230, 230);
+}
+
+h4 {
+  color: rgb(230, 230, 230);
+  font-size: 18px;
+  margin-bottom: 2.5vh;
+  font-weight: 500;
+}
+
+h4:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+h4.active {
+  text-decoration: underline;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+
+.title2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 6vh;
+}
+
+span {
+  font-weight: bold;
+}
+
+.visit {
+  display: flex;
+  flex-direction: column;
+}
+
+.admission {
+  margin-bottom: 6vh;
+}
+
+table {
+  width: 100%;
+  color: #181818;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+td {
+  padding: 2vh;
+}
+
+.price {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hours-and-location {
+  display: flex;
+  height: 60vh;
+}
+
+.visit-map {
+  flex: 3;
+}
+
+.visit-info {
+  flex: 1;
+  padding-left: 6vh;
+}
+
+.visit-hours {
+  margin-bottom: 6vh;
+}
+
+.visit-info p {
+  margin-bottom: 1vh;
+}
+
+.guidelines .title {
+  margin-bottom: 4vh;
+}
+
+.guidelines .title2 {
+  margin-bottom: 0;
+}
+
+.guidelines p {
+  margin-bottom: 4vh;
+}
+
+.last {
+  margin-bottom: 0;
 }

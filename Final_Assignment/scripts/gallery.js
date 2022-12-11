@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+  //Museum Tabs
+  $("aside:first").show().siblings().hide();
+
+  $("h4").on("click", function () {
+    let i = $(this).index();
+
+    $("aside").eq(i).show().siblings().hide();
+
+    $(this).addClass("active").siblings().removeClass("active");
+  })
+
+  //________________________________________________________
   // Museum gallery Lightbox
   const openLightBox = function (event) {
 
@@ -62,3 +74,4 @@ $(document).ready(function () {
     showImage();
   })
 })
+
