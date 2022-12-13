@@ -25,10 +25,39 @@ section:nth-child(even) {
 
 article {
   flex: 1;
+
+  display: flex;
+  flex-direction: column;
 }
 
 article h2 {
   margin-bottom: 4vh;
+}
+
+span {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.art-info {
+  margin-bottom: 6vh;
+}
+
+.art-info p {
+  font-style: italic;
+}
+
+.art-description {
+  height: auto;
+}
+
+.art-description a {
+  color: #BF4904;
+  padding: 0;
+}
+
+.art-description a:hover {
+  color: #bf4904c1;
 }
 
 article:nth-child(odd) {

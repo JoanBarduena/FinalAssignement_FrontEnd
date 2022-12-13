@@ -3,14 +3,14 @@ main {
   flex-direction: column;
   align-items: center;
 
-  height: 240vh;
+  height: auto;
   font-size: 40px;
 
   color: #181818;
 }
 
 .museum-img {
-  height: 40%;
+  height: 90vh;
   width: 100%;
   background-image: url("../images/museum.jpeg");
   background-position: center;
@@ -18,182 +18,10 @@ main {
   background-repeat: no-repeat;
 }
 
-.museum-info {
-  height: 25%;
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.museum-info-text {
-  height: 80%;
-  width: 60%;
-}
-
-.museum-info-text h2 {
-  text-align: center;
-  margin-bottom: 3vh;
-}
-
-.museum-info-text p {
-  text-align: left;
-}
-
-.museum-location {
-  height: 35%;
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-}
-
-.museum-location-left {
-  height: 80%;
-  width: 80%;
-  background-color: #fff;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.museum-map {
-  width: 60%;
-  height: 80%;
-  background-color: lightsalmon;
-}
 
 iframe {
   width: 100%;
   height: 100%;
-}
-
-.museum-location-right {
-  width: 30%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-}
-
-.museum-location-flex {
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
-.museum-location-right a {
-  color: #BF4904;
-  font-weight: 700;
-  padding: 0;
-  text-transform: none;
-  font-size: 16px;
-}
-
-.hours-title,
-.location-title {
-  color: #BF4904;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: right;
-  border-bottom: 4px solid #BF4904;
-  text-transform: uppercase;
-  margin-left: 5vh;
-  margin-bottom: 2vh;
-}
-
-.hours-text {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin-left: 5vh;
-}
-
-.hours-text p {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-
-.hours-text p:nth-of-type(-n + 4) {
-  border-bottom: 1px solid #BF4904;
-}
-
-.hours-text,
-.location-text {
-  color: black;
-  text-align: right;
-}
-
-.hours-text p,
-.location-text p {
-  font-size: 16px;
-}
-
-@media only screen and (max-width: 860px) {
-
-  .museum-img {
-    height: 20%;
-  }
-
-  .museum-info {
-    height: 35%;
-  }
-
-  .museum-info-text {
-    width: 85%;
-    height: 90%;
-  }
-
-  .museum-location {
-    height: 45%;
-    width: 100%;
-    flex-direction: column;
-    justify-content: none;
-    align-items: center;
-  }
-
-  .museum-map {
-    width: 100%;
-  }
-
-  .museum-location-left {
-    flex-direction: column;
-    width: 90%;
-  }
-
-  .museum-location-flex {
-    height: 100%;
-  }
-
-  .hours-title {
-    margin-top: 2vh;
-  }
-
-  .location-title {
-    margin-top: 1vh;
-  }
-
-  .hours-title,
-  .location-title {
-    padding-bottom: 1vh;
-    margin-left: 0;
-  }
-
-  .hours-text {
-    margin: 0;
-  }
-
-  .hours-text p:nth-child(n+3) {
-    padding: 1vh 0;
-  }
-
-  .museum-location-right {
-    width: 90%;
-  }
 }
 
 .tabs {
@@ -316,4 +144,11 @@ td {
 
 .last {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 860px) {
+
+  .museum-img {
+    height: 20%;
+  }
 }

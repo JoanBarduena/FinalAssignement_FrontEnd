@@ -4,7 +4,7 @@ main {
   display: flex;
   flex-direction: column;
 
-  height: 180vh;
+  height: auto;
 }
 
 /* section {
@@ -22,6 +22,16 @@ main {
   height: 100%;
   display: flex;
   flex-direction: row;
+}
+
+.artist-info a {
+  color: #BF4904;
+  padding: 0;
+  text-transform: none;
+}
+
+.artist-info a:hover {
+  color: #bf4904c1;
 }
 
 article {
@@ -54,7 +64,7 @@ article p {
 .bottom-section {
   display: flex;
   justify-content: center;
-  height: 55%;
+  height: 100vh;
 }
 
 .other-works {
@@ -234,11 +244,11 @@ img {
   }
 
   .top-section {
-    height: 70%;
+    height: 120vh;
   }
 
   .bottom-section {
-    height: 30%;
+    height: 50vh;
     margin-top: 2vh;
   }
 
