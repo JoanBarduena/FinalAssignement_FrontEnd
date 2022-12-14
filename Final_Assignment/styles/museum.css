@@ -10,7 +10,7 @@ main {
 }
 
 .museum-img {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-image: url("../images/museum.jpeg");
   background-position: center;
